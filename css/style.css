@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 15px;
+  min-height: 100vh;
+  background-color: #aaa;
+  background-image: url(../elijah-pilchard-oOM3ldJRRoE-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.form {
+  display: inline-block;
+  margin: 0 15px;
+  background: #2f3640;
+  border-radius: 40px;
+  padding: 10px;
+  height: 25px;
+  animation: inputanim 2s ease-in-out infinite alternate;
+}
+
+.input {
+  background: none;
+  border: none;
+  font-size: 17px;
+  padding: 0;
+  width: 0px;
+  transition: 0.8s;
+  outline: none;
+  color: #fff;
+}
+
+.form:hover .input {
+  width: 240px;
+}
+
+@keyframes inputanim {
+  from {
+    transform: scale(1.1);
+  }
+
+  to {
+    transform: scale(1.2);
+  }
+}
+
+.input::placeholder {
+  color: #e84118;
+}
+
+.btn {
+  color: #e84118;
+  font-size: 16px;
+  width: 20px;
+  outline: none;
+  background-color: transparent;
+  border: none;
+}
+
+.search-box:hover .input {
+  width: 240px;
+  padding: 0 6px;
+  animation: none;
+}
+
+.container {
+  margin: 25px;
+  display: flex;
+  gap: 25px;
+  background-image: linear-gradient(
+    105.5deg,
+    rgba(31, 212, 248, 1) 11%,
+    rgba(218, 15, 183, 1) 74.9%
+  );
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.container span {
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-top: 18px;
+}
+
+footer {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.myinstagram,
+.mytelegram,
+.mygithub {
+  background: #fff;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+  transition: 0.5s;
+  animation: inputanim 2s ease-in-out infinite alternate;
+}
+
+.myinstagram a {
+  color: rgb(255, 0, 0);
+}
+
+.mytelegram a {
+  color: blue;
+}
+
+.mygithub a {
+  color: black;
+}
+
+.myinstagram:hover,
+.mytelegram:hover,
+.mygithub:hover {
+  box-shadow: 0 0 15px #fff;
+  background: #aaa;
+}
+
+.link {
+  height: 20vh;
+  width: 30vw;
+  overflow-y: scroll;
+}
+
+h3 a {
+  color: #161012;
+  text-decoration: none;
+}
+
+.link::-webkit-scrollbar {
+  width: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .container {
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: #e84118;
+    padding: 25px;
+    border-radius: 10px;
+  }
+
+  .main {
+    text-align: center;
+  }
+
+  .img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 18px;
+  }
+
+  .main {
+    line-height: 1;
+  }
+
+  .link {
+    height: 20vh;
+    width: 50vw;
+    margin: auto;
+    overflow-y: scroll;
+  }
+
+  .search-box:hover .input {
+    width: 150px;
+    padding: 0 6px;
+    animation: none;
+  }
+
+  .hidden {
+    display: none;
+  }
+}
